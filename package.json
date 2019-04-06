@@ -1,0 +1,29 @@
+{
+  "name": "snack-pack-teams",
+  "version": "0.1.0",
+  "description": "Teams bot that helps team members get connected and stay connected",
+  "main": "src/index.js",
+  "repository": "git@github.com:carbonsam/snack-pack-teams.git",
+  "author": "Samuel Schumacher <samschu@live.com>",
+  "license": "GNU General Public License v3.0",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "botbuilder-teams": "^0.2.6",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "husky": "^1.3.1",
+    "jest": "^24.5.0",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && eslint src/*.js"
+    }
+  }
+}
