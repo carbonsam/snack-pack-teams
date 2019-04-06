@@ -1,6 +1,8 @@
 # directories
 node_modules/
+config/
 
 # files
+!config/*.example.json
 package-lock.json
 *.log

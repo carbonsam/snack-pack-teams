@@ -11,8 +11,8 @@
     "termsOfUseUrl": "https://github.com/carbonsam/snack-pack-teams"
   },
   "icons": {
-    "color": "color.png",
-    "outline": "outline.png"
+    "color": "static/images/color.png",
+    "outline": "static/images/outline.png"
   },
   "name": {
     "short": "Snack Pack",

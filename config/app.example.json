@@ -1,0 +1,10 @@
+{
+  "app": {
+    "baseUri": "BASE_URI",
+    "appId": "MICROSOFT_APP_ID"
+  },
+  "bot": {
+    "appId": "00000000-0000-0000-0000-000000000000",
+    "appPassword": "BOT_PASSWORD"
+  }
+}

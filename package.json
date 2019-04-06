@@ -5,11 +5,12 @@
   "main": "src/index.js",
   "repository": "git@github.com:carbonsam/snack-pack-teams.git",
   "author": "Samuel Schumacher <samschu@live.com>",
-  "license": "GNU General Public License v3.0",
+  "license": "GPL-3.0",
   "scripts": {
     "start": "node src/index.js"
   },
   "dependencies": {
+    "botbuilder": "3.13.1",
     "botbuilder-teams": "^0.2.6",
     "express": "^4.16.4"
   },

@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "prettier"
-  ],
+  "extends": ["eslint:recommended", "prettier"],
   "env": {
     "browser": false,
     "commonjs": true,
@@ -13,5 +10,7 @@
   "parserOptions": {
     "sourceType": "module"
   },
-  "rules": {}
+  "rules": {
+    "no-console": 0
+  }
 }
