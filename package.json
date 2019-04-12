@@ -24,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && eslint src/*.js"
+      "pre-commit": "pretty-quick --staged && eslint 'bot/**/*.js'"
     }
   }
 }
