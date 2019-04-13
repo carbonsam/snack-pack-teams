@@ -6,6 +6,8 @@ Based on https://github.com/OfficeDev/msteams-samples-hello-world-nodejs
 
 ## Development Setup
 
+_WARNING! Outdated instructions - may not work_
+
 Requires [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/).
 
 1. Clone repository and install dependenices with `yarn install`.
