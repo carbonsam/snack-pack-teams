@@ -1,7 +1,13 @@
-const buildResponse = (statusCode, body) => ({
-  statusCode,
-  body: JSON.stringify(body)
-});
+const buildResponse = (statusCode, body) => {
+  const response = {
+    statusCode,
+    body: JSON.stringify(body)
+  };
+
+  console.log(response);
+
+  return response;
+};
 
 export const responseSuccess = body => buildResponse(200, body);
 

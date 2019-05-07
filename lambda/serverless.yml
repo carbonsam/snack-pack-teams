@@ -14,7 +14,7 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs10.15
+  runtime: nodejs8.10
   stage: dev
   region: us-east-1
   # To load environment variables externally

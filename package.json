@@ -7,8 +7,8 @@
   "author": "Samuel Schumacher <samschu@live.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "build": "cd lambda/ && serverless package -p ../dist/lambda -r us-east-1 && cd ..",
-    "deploy": "cd lambda/ && serverless deploy -p ../dist/lambda -r us-east-1 --conceal && cd .."
+    "build": "cd lambda/ && yarn install && serverless package -p ../dist/lambda -r us-east-1 && cd ..",
+    "deploy": "cd lambda/ && yarn install && serverless deploy -p ../dist/lambda -r us-east-1 --conceal && cd .."
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
