@@ -17,11 +17,7 @@ const setup = app => {
     session.send('You said: %s', text);
   }).set('storage', inMemoryBotStorage);
 
-  app.post('/api/messages', connector.listen());
-
   module.exports.connector = connector;
 };
 
-module.exports = {
-  setup
-};
+setup();

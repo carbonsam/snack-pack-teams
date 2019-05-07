@@ -7,24 +7,36 @@
   "author": "Samuel Schumacher <samschu@live.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "start": "node src/index.js"
+    "build": "cd lambda/ && yarn install && serverless package -p ../dist/lambda -r us-east-1 && cd ..",
+    "deploy": "cd lambda/ && yarn install && serverless deploy -p ../dist/lambda -r us-east-1 --conceal && cd .."
   },
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "botbuilder": "3.13.1",
     "botbuilder-teams": "^0.2.6",
-    "express": "^4.16.4"
+    "source-map-support": "^0.4.18"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-source-map-support": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
     "eslint": "^5.15.3",
     "eslint-config-prettier": "^4.1.0",
     "husky": "^1.3.1",
     "jest": "^24.5.0",
     "prettier": "^1.16.4",
-    "pretty-quick": "^1.10.0"
+    "pretty-quick": "^1.10.0",
+    "serverless-offline": "^3.25.6",
+    "serverless-webpack": "^5.1.0",
+    "webpack": "^4.16.2",
+    "webpack-node-externals": "^1.6.0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && eslint src/*.js"
+      "pre-commit": "pretty-quick --staged && eslint '**/*.js'"
     }
   }
 }

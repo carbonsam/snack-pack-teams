@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/381dbdb53d6dc7d5eae8/maintainability)](https://codeclimate.com/github/carbonsam/snack-pack-teams/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/381dbdb53d6dc7d5eae8/test_coverage)](https://codeclimate.com/github/carbonsam/snack-pack-teams/test_coverage)
+
 # Snack Pack Bot :school_satchel:
 
 Teams bot that helps team members get connected and stay connected.
@@ -5,6 +8,8 @@ Teams bot that helps team members get connected and stay connected.
 Based on https://github.com/OfficeDev/msteams-samples-hello-world-nodejs
 
 ## Development Setup
+
+_WARNING! Outdated instructions - may not work_
 
 Requires [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/).
 
