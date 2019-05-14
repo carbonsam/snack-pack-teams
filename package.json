@@ -7,32 +7,31 @@
   "author": "Samuel Schumacher <samschu@live.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "build": "cd lambda/ && yarn install && serverless package -p ../dist/lambda -r us-east-1 && cd ..",
-    "deploy": "cd lambda/ && yarn install && serverless deploy -p ../dist/lambda -r us-east-1 --conceal && cd .."
+    "start": "node ./index.js",
+    "watch": "nodemon ./index.js",
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "babel-runtime": "^6.26.0",
-    "botbuilder": "3.13.1",
-    "botbuilder-teams": "^0.2.6",
-    "source-map-support": "^0.4.18"
+    "botbuilder": "^4.4.0",
+    "dotenv": "^6.1.0",
+    "restify": "^7.2.3"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-source-map-support": "^1.0.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "eslint": "^5.15.3",
-    "eslint-config-prettier": "^4.1.0",
+    "eslint": "^5.8.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "husky": "^1.3.1",
-    "jest": "^24.5.0",
+    "nodemon": "^1.18.6",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0",
-    "serverless-offline": "^3.25.6",
-    "serverless-webpack": "^5.1.0",
-    "webpack": "^4.16.2",
-    "webpack-node-externals": "^1.6.0"
+    "eslint-config-prettier": "^4.1.0"
+  },
+  "engines": {
+    "node": "10.15"
   },
   "husky": {
     "hooks": {
