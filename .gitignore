@@ -1,3 +1,6 @@
+*.js.map
+.env
+
 # directories
 node_modules/
 config/

@@ -1,4 +1,0 @@
-{
-  "plugins": ["source-map-support", "transform-runtime"],
-  "presets": [["env", { "node": "10.15" }], "stage-3"]
-}
