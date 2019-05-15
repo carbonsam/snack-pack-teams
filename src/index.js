@@ -37,11 +37,11 @@ adapter.onTurnError = async (context, error) => {
 };
 
 // Create the main dialog
-const SnackPackBot = new SnackPackBot();
+const Bot = new SnackPackBot();
 
 // Listen for incoming requests
 server.post('/api/messages', (req, res) => {
   adapter.processActivity(req, res, async context => {
-    await SnackPackBot.run(context);
+    await Bot.run(context);
   });
 });
