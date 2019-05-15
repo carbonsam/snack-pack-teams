@@ -7,9 +7,9 @@
   "author": "Samuel Schumacher <samschu@live.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "start": "node ./index.js",
-    "watch": "nodemon ./index.js",
-    "lint": "./node_modules/.bin/eslint .",
+    "start": "node src/index.js",
+    "watch": "nodemon src/index.js",
+    "lint": "node_modules/.bin/eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
