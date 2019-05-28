@@ -12,5 +12,8 @@ Requires [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/).
 1. Clone repository and install dependenices with `yarn install`.
 1. Install the Bot Framework Emulator version 4.3.0 or greater from [the releases page here][https://github.com/microsoft/botframework-emulator/releases]
 1. Launch the Bot Framework Emulator
-   - File -> Open Bot
-   - Enter a Bot URL of `http://localhost:3978/api/messages`
+1. Via the side navigation, create a new bot configuration
+   - Enter a name
+   - Enter the Endpoint URL of `http://localhost:3978/api/messages`
+   - Save and Connect
+   - This is the bot you'll use for future development, so recall where you save this file for future reference
